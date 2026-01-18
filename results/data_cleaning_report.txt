@@ -1,0 +1,18 @@
+DATA CLEANING REPORT
+==================================================
+Spot rows after cleaning: (4125, 6)
+Futures rows after cleaning: (4125, 9)
+Options rows after cleaning: (109135, 15)
+Merged rows: (4125, 18)
+
+Timestamp alignment:
+Common timestamps used: 4125
+
+Futures rollover:
+Unique futures contracts in dataset: 1
+NOTE: Full 1-year futures contracts not available in this Zerodha API history.
+Dataset is partial, but rollover logic can work when more contracts are available.
+
+ATM calculation:
+ATM strike calculated dynamically using nearest strike to spot close for each timestamp.
+Kept only ATM ± 0/1/2 strikes.
